@@ -1,0 +1,9 @@
+.DS_store
+.dep
+gh60.eep
+gh60.elf
+gh60.hex
+gh60.lss
+gh60.map
+gh60.sym
+obj_gh60
