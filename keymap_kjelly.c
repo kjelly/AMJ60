@@ -20,18 +20,18 @@
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 0 */
     KEYMAP_KJELLY(
-        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, FN2, \
+        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, GRV, \
         TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS,      \
         FN1,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     ENT,       \
   LCTL, LSFT, Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     RSFT,FN1,       \
-        GRV,  LGUI,LALT,          SPC,         FN1,  RALT,RGUI,RCTL),
+        LCTL,  LGUI,LALT,          SPC,         FN1,  RALT,RGUI,RCTL),
 
     /* Layer 1 */
     KEYMAP_KJELLY(
         GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL, TRNS,  \
-        CAPS,BTN1,BTN2,BTN3,BTN4,FN10,MS_L,MS_D,MS_U,MS_R,BSPC, INS, PAUS,INS,      \
+        CAPS,BTN1,BTN2,BTN3,BSLS,FN10,MS_L,MS_D,MS_U,MS_R,BSPC, INS, PAUS,INS,      \
         TRNS,VOLD,VOLU,MUTE,PGDN,HOME,LEFT, DOWN, UP, RIGHT, BSPC, DEL, PENT,
-   TRNS,TRNS,TRNS,TRNS,TRNS,END,PGUP,FN0,FN2,FN4, FN6,FN9,     TRNS,TRNS,      \
+   TRNS,TRNS,TRNS,TRNS,GRV,END,PGUP,FN0,FN2,FN4, FN6,FN9,     TRNS,TRNS,      \
         TRNS,DEL,TRNS,          TRNS,                    TRNS,TRNS,TRNS,TRNS),
 
     /* Layer 2 */
