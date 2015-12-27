@@ -20,19 +20,19 @@
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 0 */
     KEYMAP_KJELLY(
-        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, GRV, \
-        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS,      \
+        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSLS, GRV, \
+        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSPC,      \
         FN1,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     ENT,       \
-  LCTL, LSFT, Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     RSFT,FN1,       \
-        LCTL,  LGUI,LALT,          SPC,         FN1,  RALT,RGUI,RCTL),
+  LCTL, LSFT, Z,   X,   C,   V,   B,   N,   M,   COMM, DOT,   SLSH, FN11, FN1,       \
+        FN12,  LGUI,LALT,          SPC,                LEFT, DOWN, UP,   RIGHT),
 
     /* Layer 1 */
     KEYMAP_KJELLY(
-        GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL, TRNS,  \
-        CAPS,BTN1,BTN2,BTN3,BSLS,FN10,MS_L,MS_D,MS_U,MS_R,BSPC, INS, PAUS,INS,      \
+        GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, TRNS,  \
+        CAPS,BTN1,BTN2,BTN3,BSLS,FN10,MS_L,MS_D,MS_U,MS_R,BSPC, INS, PAUS,DEL,      \
         TRNS,VOLD,VOLU,MUTE,PGDN,HOME,LEFT, DOWN, UP, RIGHT, BSPC, DEL, PENT,
-   TRNS,TRNS,TRNS,TRNS,GRV,END,PGUP,FN0,FN2,FN4, FN6,FN9,     TRNS,TRNS,      \
-        TRNS,DEL,TRNS,          TRNS,                    TRNS,TRNS,TRNS,TRNS),
+   TRNS,TRNS,TRNS,TRNS,GRV,END,PGUP,FN0,FN2,FN4, FN6, FN9, RSFT,TRNS,      \
+        TRNS,DEL,TRNS,          TRNS,            RALT,RGUI,RSFT,RCTL),
 
     /* Layer 2 */
     KEYMAP_KJELLY(
@@ -123,4 +123,6 @@ const uint16_t PROGMEM fn_actions[] = {
     [8] = ACTION_LAYER_TOGGLE(1),
     [9] = ACTION_MODS_KEY(MOD_LSFT, KC_GRV),
     [10] = ACTION_MODS_KEY(MOD_LSFT, KC_BSLS),
+    [11] = ACTION_MODS_ONESHOT(MOD_RSFT),
+    [12] = ACTION_MODS_ONESHOT(MOD_LCTL),
 };
