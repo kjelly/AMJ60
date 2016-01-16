@@ -49,6 +49,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
 )
 
+/* number of backlight levels */
+#ifdef BREATHING_LED_ENABLE
+#ifdef FADING_LED_ENABLE
+#define BACKLIGHT_LEVELS 8
+#else
+#define BACKLIGHT_LEVELS 6
+#endif
+#else
+#define BACKLIGHT_LEVELS 3
+#endif
+#define BACKLIGHT_CUSTOM
+
+/* number of leds */
+#define LED_COUNT 10
+#define EECONFIG_LEDMAP_IN_EEPROM 8
+
 
 
 /*
