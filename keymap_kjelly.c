@@ -21,8 +21,8 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 0 */
     KEYMAP_KJELLY(
         ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSLS, GRV, \
-        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSPC,      \
-        FN1,A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     ENT,       \
+        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,  FN15,   LBRC,RBRC,BSPC,      \
+        FN1,A,   S,   D,   F,   G,   H,   J,   K,   L,   FN13,   QUOT,     ENT,       \
   LCTL, LSFT, Z,   X,   C,   V,   B,   N,   M,   COMM, DOT,   SLSH, FN11, FN1,       \
         FN12,  LGUI,LALT,          SPC,                LEFT, DOWN, UP,   RIGHT),
 
@@ -37,8 +37,8 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 2 */
     KEYMAP_KJELLY(
         ESC, 1,  2,  3,  4,  5,  6,  7,  8,  9,  0, COPY, PASTE, UNDO, KC_TRNS,  \
-        CAPS,BTN1,BTN2,BTN3,BTN4,TRNS,LEFT,DOWN,UP,RIGHT, NO, NO, NO,TRNS,      \
-        FN3,ACL0,ACL1,ACL2,PGDN,HOME,MS_L, MS_D, MS_U, MS_R, NO, NO, PENT,
+        CAPS,BTN1,BTN2,BTN3,BTN4,TRNS,LEFT,DOWN,UP,RIGHT, FN14, NO, NO,TRNS,      \
+        FN3,ACL0,ACL1,ACL2,PGDN,HOME,MS_L, MS_D, MS_U, MS_R, FN14, NO, PENT,
    BTN1,MS_U,BTN2,LCTL,LGUI,LALT,PGUP,WH_L,WH_D,WH_U, WH_R,RCTL,     UP,FN3,      \
         MS_L,MS_D,MS_R,          TRNS,                    FN3,LEFT,DOWN,RIGHT),
 
@@ -106,6 +106,14 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    FN3, TRNS,FN0,FN2,FN4,FN6,TRNS,PPLS,PMNS,END, PGDN,DOWN,     TRNS,TRNS,      \
         TRNS,TRNS,TRNS,          TRNS,                    TRNS,TRNS,TRNS,TRNS),
 
+    /* Layer 8 mouse layer */
+    KEYMAP_KJELLY(
+        ESC, 1,  2,  3,  4,  5,  6,  7,  8,  9,  0, COPY, PASTE, UNDO, KC_TRNS,  \
+        CAPS,BTN1,BTN2,BTN3,BTN4,TRNS,LEFT,BTN1,MS_U,BTN2, FN14, NO, NO,TRNS,      \
+        FN3,ACL0,ACL1,ACL2,PGDN,HOME,NO, MS_L, MS_D, MS_R, FN14, NO, PENT,
+   BTN1,MS_U,BTN2,LCTL,LGUI,LALT,PGUP,WH_L,WH_D,WH_U, WH_R,RCTL,     UP,FN3,      \
+        MS_L,MS_D,MS_R,          TRNS,                    FN3,LEFT,DOWN,RIGHT),
+
 };
 
 /*
@@ -125,4 +133,7 @@ const uint16_t PROGMEM fn_actions[] = {
     [10] = ACTION_MODS_KEY(MOD_LSFT, KC_BSLS),
     [11] = ACTION_MODS_ONESHOT(MOD_RSFT),
     [12] = ACTION_MODS_ONESHOT(MOD_LCTL),
+    [13] = ACTION_LAYER_TAP_KEY(8, KC_SCLN),
+    [14] = ACTION_LAYER_SET(0, ON_RELEASE),
+    [15] = ACTION_LAYER_TAP_KEY(2, KC_P),
 };
