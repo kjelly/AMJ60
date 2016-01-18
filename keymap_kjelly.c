@@ -21,7 +21,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 0 */
     KEYMAP_KJELLY(
         ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSLS, GRV, \
-        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,  FN15,   LBRC,RBRC,BSPC,      \
+        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,  P,   LBRC,RBRC,BSPC,      \
         FN1,A,   S,   D,   F,   G,   H,   J,   K,   L,   FN13,   QUOT,     ENT,       \
   LCTL, LSFT, Z,   X,   C,   V,   B,   N,   M,   COMM, DOT,   SLSH, FN11, FN1,       \
         FN12,  LGUI,LALT,          SPC,                LEFT, DOWN, UP,   RIGHT),
