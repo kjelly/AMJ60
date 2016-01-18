@@ -51,7 +51,6 @@ TARGET_DIR = .
 # project specific files
 SRC =	keymap_common.c \
 	matrix.c \
-	led.c \
 	ledmap_kjelly.c \
 	backlight.c
 
@@ -129,6 +128,7 @@ FADING_LED_ENABLE = yes # Enable fading backlight
 BREATHING_LED_ENABLE = yes # Enable breathing backlight
 LEDMAP_ENABLE = yes     # Enable LED mapping
 LEDMAP_IN_EEPROM_ENABLE = yes # Read LED mapping from eeprom
+BACKLIGHT_ENABLE = yes  # Enable keyboard backlight functionality
 
 
 # Optimize size but this may cause error "relocation truncated to fit"
