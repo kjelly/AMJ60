@@ -24,7 +24,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,  P,   LBRC,RBRC,BSPC,      \
         FN1,A,   S,   D,   F,   G,   H,   J,   K,   L,   FN13,   QUOT,     ENT,       \
   LCTL, LSFT, Z,   X,   C,   V,   B,   N,   M,   COMM, DOT,   SLSH, FN11, FN1,       \
-        FN12,  LGUI,LALT,          SPC,                LEFT, DOWN, UP,   RIGHT),
+        FN12,FN22, FN21,          SPC,                LEFT, DOWN, UP,   RIGHT),
 
     /* Layer 1 */
     KEYMAP_KJELLY(
@@ -109,8 +109,8 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 8 mouse layer */
     KEYMAP_KJELLY(
         ESC, 1,  2,  3,  4,  5,  6,  7,  8,  9,  0, COPY, PASTE, UNDO, KC_TRNS,  \
-        CAPS,BTN1,BTN2,BTN3,BTN4,TRNS,LEFT,BTN1,MS_U,BTN2, FN14, NO, NO,TRNS,      \
-        FN3,ACL0,ACL1,ACL2,PGDN,HOME,NO, MS_L, MS_D, MS_R, FN14, NO, PENT,
+        CAPS,BTN1,BTN2,BTN3,BTN4,TRNS,LEFT,BTN1,BTN2,BTN2, FN14, NO, NO,TRNS,      \
+        FN3,ACL0,ACL1,ACL2,PGDN,HOME,MS_L, MS_D, MS_U, MS_R, FN14, NO, PENT,
    BTN1,MS_U,BTN2,LCTL,LGUI,LALT,PGUP,WH_L,WH_D,WH_U, WH_R,RCTL,     UP,FN3,      \
         MS_L,MS_D,MS_R,          TRNS,                    FN3,LEFT,DOWN,RIGHT),
 
@@ -142,4 +142,7 @@ const uint16_t PROGMEM fn_actions[] = {
     [18] = ACTION_BACKLIGHT_DECREASE(),
     [19] = ACTION_BACKLIGHT_TOGGLE(),
     [20] = ACTION_BACKLIGHT_INCREASE(),
+
+    [21] = ACTION_MODS_ONESHOT(MOD_LALT),
+    [22] = ACTION_MODS_ONESHOT(MOD_LGUI),
 };
