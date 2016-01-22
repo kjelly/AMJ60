@@ -24,12 +24,12 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,  P,   LBRC,RBRC,BSPC,      \
         FN1,A,   S,   D,   F,   G,   H,   J,   K,   L,   FN13,   QUOT,     ENT,       \
   LCTL, LSFT, Z,   X,   C,   V,   B,   N,   M,   COMM, DOT,   SLSH, FN11, FN1,       \
-        FN12,FN22, FN21,          SPC,                LEFT, DOWN, UP,   RIGHT),
+        FN12,FN23, FN22,          SPC,                LEFT, DOWN, UP,   RIGHT),
 
     /* Layer 1 */
     KEYMAP_KJELLY(
         GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, TRNS,  \
-        CAPS,BTN1,FN19,BSLS,FN10,NO  ,NO,   MINS, FN17,EQL,   FN16, INS, PAUS,DEL,      \
+        CAPS,FN21,FN19,BSLS,FN10,NO  ,NO,   MINS, FN17,EQL,   FN16, INS, PAUS,DEL,      \
         TRNS,VOLD,VOLU,MUTE,PGDN,HOME,LEFT, DOWN, UP,  RIGHT, BSPC, DEL, PENT,
    TRNS,TRNS,FN18,FN20,GRV,END,PGUP,FN0,FN2,FN4, FN6, FN9, RSFT,TRNS,      \
         TRNS,DEL,TRNS,          TRNS,            RALT,RGUI,RSFT,RCTL),
@@ -142,7 +142,8 @@ const uint16_t PROGMEM fn_actions[] = {
     [18] = ACTION_BACKLIGHT_DECREASE(),
     [19] = ACTION_BACKLIGHT_TOGGLE(),
     [20] = ACTION_BACKLIGHT_INCREASE(),
+    [21] = ACTION_BACKLIGHT_STEP(),
 
-    [21] = ACTION_MODS_ONESHOT(MOD_LALT),
-    [22] = ACTION_MODS_ONESHOT(MOD_LGUI),
+    [22] = ACTION_MODS_ONESHOT(MOD_LALT),
+    [23] = ACTION_MODS_ONESHOT(MOD_LGUI),
 };
