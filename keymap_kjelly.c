@@ -28,8 +28,8 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* Layer 1 */
     KEYMAP_KJELLY(
-        GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, TRNS,  \
-        CAPS,FN21,FN19,BSLS,FN10,NO  ,NO,   MINS, FN17,EQL,   FN16, INS, PAUS,DEL,      \
+        GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, FN21, FN19,  \
+        CAPS,GRV,FN9,BSLS,FN10,NO  ,NO,   MINS, FN17,EQL,   FN16, INS, PAUS,DEL,      \
         TRNS,VOLD,VOLU,MUTE,PGDN,HOME,LEFT, DOWN, UP,  RIGHT, BSPC, DEL, PENT,
    TRNS,TRNS,FN18,FN20,GRV,END,PGUP,FN0,FN2,FN4, FN6, FN9, RSFT,TRNS,      \
         TRNS,DEL,TRNS,          TRNS,            RALT,RGUI,RSFT,RCTL),
