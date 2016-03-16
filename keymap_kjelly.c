@@ -20,7 +20,7 @@
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 0 */
     KEYMAP_KJELLY(
-        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, MS_WH_DOWN, MS_WH_UP, \
+        ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MS_WH_LEFT, MS_WH_DOWN, MS_WH_UP, MS_WH_RIGHT, \
         TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,  P,   LBRC,RBRC,BSPC,      \
         FN1,A,   S,   D,   F,   G,   H,   J,   K,   L,   FN13,   QUOT,     ENT,       \
   LCTL, LSFT, Z,   X,   C,   V,   B,   N,   M,   COMM, DOT,   SLSH, FN11, FN1,       \
@@ -31,7 +31,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, FN21, FN19,  \
         CAPS,GRV,FN9,BSLS,FN10,NO  ,NO,   MINS, FN17,EQL,   FN16, INS, PAUS,DEL,      \
         TRNS,VOLD,VOLU,MUTE,PGDN,HOME,LEFT, DOWN, UP,  RIGHT, BSPC, DEL, PENT,
-   TRNS,TRNS,FN18,FN20,GRV,END,PGUP,FN0,FN2,FN4, FN6, FN9, RSFT,TRNS,      \
+   TRNS,TRNS,FN18,FN20,GRV,END,PGUP,FN10,FN0,FN0, FN0, FN9, RSFT,TRNS,      \
         TRNS,DEL,TRNS,          TRNS,            RALT,RGUI,RSFT,RCTL),
 
     /* Layer 2 */
@@ -47,7 +47,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, TRNS,  \
         CAPS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,PSCR,SLCK,PAUS,UP,  TRNS,TRNS,      \
         TRNS,VOLD,VOLU,MUTE,EJCT,TRNS,PAST,PSLS,HOME,PGUP,LEFT,RGHT,     PENT,      \
-   TRNS,TRNS,TRNS,TRNS,TRNS,END,PGUP,FN0,FN2,FN4, FN6,FN9,     TRNS,TRNS,      \
+   TRNS,TRNS,TRNS,TRNS,TRNS,END,PGUP,FN0,FN0,FN0, FN0,FN9,     TRNS,TRNS,      \
         TRNS,TRNS,TRNS,          TRNS,                    TRNS,TRNS,TRNS,TRNS),
 
     /* Layer 4 */
@@ -55,7 +55,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, FN2, \
         CAPS,WH_U,BTN1,MS_U,BTN2,WH_L,HOME,END,PGUP,PGDN,P, NO, PAUS,INS,      \
         FN5,WH_D,MS_L,MS_D,MS_R,WH_R,LEFT, DOWN, UP, RIGHT, NO, NO, PENT,
-   TRNS,TRNS,TRNS,TRNS,TRNS,END,PGUP,FN0,FN2,FN4, FN6,FN9,     TRNS,FN5,      \
+   TRNS,TRNS,TRNS,TRNS,TRNS,END,PGUP,FN0,FN0,FN0, FN0,FN9,     TRNS,FN5,      \
         GRV,  LGUI,LALT,          SPC,         FN5,  RALT,RGUI,RCTL),
 
     /* Layer 5 */
@@ -63,7 +63,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL, TRNS,  \
         CAPS,BTN1,BTN2,BTN3,BTN4,FN4,MS_L,MS_D,MS_U,MS_R,BSPC, INS, PAUS,INS,      \
         TRNS,VOLD,VOLU,MUTE,PGDN,HOME,LEFT, DOWN, UP, RIGHT, BSLS, DEL, PENT,
-   TRNS,TRNS,TRNS,TRNS,TRNS,END,PGUP,FN0,FN2,FN4, FN6,FN9,     TRNS,TRNS,      \
+   TRNS,TRNS,TRNS,TRNS,TRNS,END,PGUP,FN0,FN0,FN0, FN0,FN9,     TRNS,TRNS,      \
         TRNS,DEL,TRNS,          TRNS,                    TRNS,TRNS,TRNS,TRNS),
 
 
